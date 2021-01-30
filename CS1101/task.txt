@@ -1,0 +1,25 @@
+Topic: 
+
+Introduction (Hello, World Below)
+Introduction to Boolean Alebra
+
+Introduction to digital circuits and logic gates
+Install and become faimilar with the operation of Logism simulator
+
+
+Learning Outcomes:
+
+Become familar with the elementary logic gates
+Become familar with boolean algebra
+Install and become familar with the operation of the Logism simulator
+
+
+Tasks:
+
+-->Complete reading assignments
+-->Download and install the Hardware Simulator on your computer
+-->Optionally watch Video Lectures
+-->Complete the Unit 1 Exercise
+-->Post your answer to the question in your Discussion Forum and follow it up with approximately 3-4 comments to other students' posts. Rate other student's post
+-->Take the Self-Quiz
+-->Post your activities throughout the week in the Learning Journal
