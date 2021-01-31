@@ -1,0 +1,51 @@
+Discussion Assignment:
+
+
+Python version --> 3.8.5 
+
+Statement 1:
+
+Input:
+>>> print 'Hello, World!'
+
+Output:
+  File "<stdin>", line 1
+    print 'Hello, World!'
+
+  SyntaxError: Missing parentheses in call to 'print'. Did you mean print('Hello, World!')?
+
+
+Explanation: 
+
+Whenever the print statement is used to print any string value, the interpreter returns an error message. The output should have been a very clear string output on the terminal, i.e. Hello World! 
+
+The reason why this happens is because I am using Python3. To be more precise, I am using Python 3.8.5. In python2, the interpreter considers the keyword 'print' as statement. On the other hand, Python3 considers the 'print' keyword as a function (Gerlich, 2015). As print is a statement, it can take a number a number of comma-seperated arguments. Also, there is no need for any parentheses. Parentheses is only used when using a function. In Python3, 'print' keyword is a function and requires parentheses. In other words, the parentheses is the proof a keyword being a function (Downey, 2015). Thus, print keyword requies a parentheses. If we write the code in the following way using parentheses, we a get a proper output. 
+
+Input:
+>>>print('Hello, World!')  #(Downey, 2015, p. 3)
+
+Output:
+Hello, World!
+
+
+
+As we know, a formal language such as programming language uses well-defined tokens and structures so that the python interpreters tries can understand what do we mean by typing a bunch of stacked keywords side by side. To do so, the python interpreter parses the language and understand the basic structure. The python interpreter is unable to parse a structure that is defined inside the interpreter. Syntax error occurs whenever the interpreter is unable to understand the structure. The'print' keyword in Python uses parentheses to give it they identity of a function. So, any function without any parentheses is not maintaining a proper structure, leading to the interpreter's inablity to parsing the code and resulting in a Synstax Error.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+References:
+
+1) Godzilla, T. of, &amp; Gerlich, R. (2015, November 30). What is the difference between print and print() in python 2.7. Stack Overflow. https://stackoverflow.com/questions/33996749/what-is-the-difference-between-print-and-print-in-python-2-7#:~:text=In%20Python%202.7%20(and%20before,with%20a%20space%20in%20between.&amp;text=It%20first%20prints%20the%20string,its%20__str__%20function).
+
+2) Downey, A. B. (2015). Think Python. O'Reilly.  
