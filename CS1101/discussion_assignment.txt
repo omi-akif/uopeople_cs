@@ -11,7 +11,7 @@ Input:
 Output:
   File "<stdin>", line 1
     print 'Hello, World!'
-
+                        ^
   SyntaxError: Missing parentheses in call to 'print'. Did you mean print('Hello, World!')?
 
 
@@ -31,17 +31,149 @@ Hello, World!
 
 As we know, a formal language such as programming language uses well-defined tokens and structures so that the python interpreters tries can understand what do we mean by typing a bunch of stacked keywords side by side. To do so, the python interpreter parses the language and understand the basic structure. The python interpreter is unable to parse a structure that is defined inside the interpreter. Syntax error occurs whenever the interpreter is unable to understand the structure. The'print' keyword in Python uses parentheses to give it they identity of a function. So, any function without any parentheses is not maintaining a proper structure, leading to the interpreter's inablity to parsing the code and resulting in a Synstax Error.
 
+The output also says that the version used here for this example is Python3.x
 
 
+Statement 2:
+
+Input:
+
+>>> 1/2
+
+Output:
+0.5
+
+Explanation:
+
+In Python programming, arithmetic operators are used to perform mathematical calculations(Downey, 2015). In other words, arithmetic operators are special symbols that does mathematical operations such as addition, substraction, multiplication, and division (Downey, 2015). Here '/' beteween the two numbers 1 and 2 is an operator that does division. If we divide 1 by 2, the result is a 0.5. The result is a decimal fraction or a floating number.
+
+This is not the case for Python2. Python3 considers division as float division. Python2, however, considers division as integral division. (Basak, 2017). 
+
+In python2, 
+
+Input: 
+>>>1/2
+
+Output:
+0
+
+The interpreter of Python, a dynamic programming language, is written in C, which is a statically typed programming language (Garavaglia, 2017). As a dynamic language, Pyhon assigns the data type seeing the value used in standard input (Basak, 2017).
+
+If I enter 1/2 as input in Python2, the interpreter assigns the numbers 1 and 2 as <class 'int'> datatype (Basak, 2017). 
+
+Taking the 8 bit binary of 1 and 2, i.e. 0b000000001 and 0b000000010, the computer returns 0 with a remainder of 1. The computer discards the 1 and displays only the quotient, which is 0 (Basak, 2017). 
+
+If both the numbers 1 and 2 or any of them are converted to a float, the division operator will return a floating point. For the sake of exemplification, an example is stated below.
+
+An int number can be converted to float using the float function (Hudson, 2019). So, the program can be written as 
+
+Input:
+>>> 1/float(2)
+
+Output:
+0.5
 
 
+In the text book "Think Python" written by Allen Downey, there is a similar example that does for numbers with high values. 
+
+Input:
+>>> 84 / 2 #(Downey, 2015, p. 3)
+
+Output:
+42.0
+
+It can be inferred from the output that the type of the value is float <class 'float'> and the version of Python used here is Python3.x
+
+Input: 
+>>> type(1/2)
+
+Statement 3:
+
+Input: 
+>>> type(1/2)
+
+Output:
+<class 'float'>
+
+In the above python statement, the type() function (Downey, 2015) is used to find out what is the type of a value. All the expressions used in programming has a value assigned to it. For example 1/2 expression has a value of 0.5. There are primarily three types of numeric data in Python (Aggarwal, 2021). They are int, float, complex. In othe words, there are three types of values an expression or a statement can be assigned.
+
+Using the type() function with an argument of value worth 1/2, python interpreter returns class 'float'. Here, class is used in the sense of it type (Downey, 2015). 
+
+Delving into the types of values, we can find that 
+
+int --> positive negative whole numbers, known as integers.
+float --> decimal numbers that recognized by the decimal point along the number.
+Complex Numbers --> numbers that has a complex part
+
+According to the exaplanation for the statement 2, it can be clearly inferred that 1/2 will return a 0.5 for Python 3.x and 0 for Python 2.x. As the number 0.5 is a decimal number, the type of the value is a <class 'float'>. In Python 2.x, the value is an whole number. In other words, the type of the value is <class 'int'>.
+
+In an example from the text book, there are similar examples that are mentioned.
+
+Input:
+>>> type(42.0) 
+
+Output:
+<class 'float'>
+
+This example signifies the fact that a decimal number or a fraction that can be represented as a decimal fraction has a float and further examination of the type using the type function returns an output <class 'float>
+pr
 
 
+Statement 4:
+
+Input:
+>>> print(01)
+
+Output :
+  File "<stdin>", line 1
+    print(01)
+	   ^
+SyntaxError: invalid token
+
+This statement results in an Syntax error for Python 3.x, stating that the token used here is invalid. The interpreter also points where the issue might be. Tokens are considered to be the basic building blocks or elements of a language (Downey, 2015). Here 01 is considered an invalid token because there is a token that is missing here. As Python is a formal language, it can only read if the syntax is well-defined and the tokens are accurate (Elkner et al., 2010).
+
+In Python 2.x, print(01) will print 1 as output. It is because 0 is considered to be a prefix to identify Octal numbers in Python 2.x. In Python 3.x, 0o is used as a prefix for Octal numbers (Marnach, 2014). As the Python 3.x interpreter was unable to understand the token that it unfamilar with, it raised a syntax error. 
+As there was no example similar to the statement mentioned in the assignment, there was no way of comparison between two examples.
 
 
+Example 5:
+
+Input:
+>>>1/(2/3)
+
+Output:
+1.5
+
+This statement outputs a float number <class 'float'> and the result is apparent for Python 3.x version. The bracket used here is to specifiy which arithmetic operator needs to execute first between two numbers before any other operators have its turn. 
 
 
+(“Barcelona to Ban Burqa,” 2010)
 
+Input:
+>>>1/2/3
+
+Output:
+0.16666666666666666
+
+This is compeletely different from the value of 1/(2/3). This happens because the Python interpreters parses the line from left to right whenever it encounters several same operators used for a compund arithmetic operation ('Writing Python Functions,' n.d.). So, brackets are used to specify which operation to do first.  
+
+For Python 2.x an error is encountered.
+
+Input:
+>>>1/(2/3)
+
+Output:
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: integer division or modulo by zero
+
+This can be explained with the explanation of statement 2. This happens because 2/3 outputs a whole number, leaving out the decimal. In short, the output is 0. No number can be divided with 0. If input statement is broken down, step by step, the following occurs:
+
+--> 1/(2/3)
+
+--> 1/(0)
+
+--> ZeroDivisionError.
 
 
 References:
@@ -49,3 +181,17 @@ References:
 1) Godzilla, T. of, &amp; Gerlich, R. (2015, November 30). What is the difference between print and print() in python 2.7. Stack Overflow. https://stackoverflow.com/questions/33996749/what-is-the-difference-between-print-and-print-in-python-2-7#:~:text=In%20Python%202.7%20(and%20before,with%20a%20space%20in%20between.&amp;text=It%20first%20prints%20the%20string,its%20__str__%20function).
 
 2) Downey, A. B. (2015). Think Python. O'Reilly.  
+
+3) Pacheco, P., &amp; Basak,, S. (2017, April 25). Why does “5/2 = 2” and not 2.5 in Python? Retrieved January 31, 2021, from https://www.quora.com/Why-does-%E2%80%9C5-2-2%E2%80%9D-and-not-2-5-in-Python
+
+4) Garavaglia, E. (2017, April 16). Is C language a static or dynamic language? Retrieved January 31, 2021, from https://www.quora.com/Is-C-language-a-static-or-dynamic-language
+
+5) Hudson, P. (2019, May 28). How to convert an int to a float. Retrieved January 31, 2021, from https://www.hackingwithswift.com/example-code/language/how-to-convert-an-int-to-a-float
+
+6) Aggarwal, N. (2020, July 29). Python Data Types. Retrieved January 31, 2021, from https://www.geeksforgeeks.org/python-data-types/
+
+7) Marnach, S. (2014, August 19). 01 invalid token. Retrieved January 31, 2021, from https://stackoverflow.com/questions/25382405/01-invalid-token
+
+8) Elkner, J., Downey, A. B., &amp; Meyers, C. (2010). How to Think Like a Computer Scientist: Learning with Python 2nd Edition documentation. Retrieved January 31, 2021, from https://www.openbookproject.net/thinkcs/python/english2e/ch01.html
+
+9) Writing Python Functions, Part 2: Flow &amp; Scope. (n.d.). Retrieved January 31, 2021, from https://thehelloworldprogram.com/python/writing-python-functions-part-2-flow-scope/
