@@ -1,0 +1,137 @@
+
+<!-- saved from url=(0037)https://allendowney.com/research/tcp/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body bgcolor="white">
+
+
+
+<title>TCP Performance Modeling</title>
+
+
+<table width="550" cellpadding="20"><tbody><tr><td>
+
+<h1>TCP Performance Modeling</h1>
+
+Allen B. Downey
+
+<p>
+This page describes two of my recent papers on TCP performance.
+
+</p><hr>
+
+<h2>TCP Self-Clocking and Bandwidth Estimation</h2>
+
+<h3>Abstract</h3>
+
+We propose a simple queueing model for TCP transfers sharing a
+bottleneck link and examine its behavior when the buffer at the
+bottleneck is large compared to the bandwidth-delay product.  This
+model explains some behaviors of TCP that have already been observed,
+and predicts other behaviors that are new.  We present measurements
+that demonstrate the predicted behaviors in the current Internet.
+
+<h3>Papers</h3>
+
+This paper appeared in Computer Networks, Volume 51, Issue 13, 12
+September 2007, Pages 3844-3863.
+
+<a href="https://allendowney.com/research/tcp/downey07tcp.ps">Postscript</a>,
+<a href="https://allendowney.com/research/tcp/downey07tcp.ps.gz">gzipped Postscript</a> and
+<a href="https://allendowney.com/research/tcp/downey07tcp.pdf">PDF</a>.
+
+<p>
+An earlier version of this paper, entitled "TCP Self-Clocking," 
+is available as an
+Olin College Technical Report TR-2003-002, in
+<a href="https://allendowney.com/research/tcp/downey-TR-2003-002.ps">Postscript</a>,
+<a href="https://allendowney.com/research/tcp/downey-TR-2003-002.ps.gz">gzipped Postscript</a> and
+<a href="https://allendowney.com/research/tcp/downey-TR-2003-002.pdf">PDF</a>.
+
+</p><h3>Slides</h3>
+
+<p>Here are the <a href="https://allendowney.com/research/tcp/downey04slides.pdf">slides</a> I used when
+I presented this work for the Boston University Network Research Group.
+
+</p><h3>Software</h3>
+
+<p>Here is the <a href="https://allendowney.com/research/tcp/sim.c">simulator</a> I used to generate
+some of the results in the paper.  It provides a reference implementation
+of some of the algorithms described in the paper.
+
+
+</p><hr>
+
+<h2>An empirical model of TCP performance</h2>
+
+<h3>Abstract</h3>
+
+We propose a model of TCP performance that captures the behavior of a
+set of network paths with diverse characteristics.  The model uses
+more parameters than others, but we show that each feature
+of the model describes an effect that is important for at least some
+paths.  We show that the model is sufficient to describe the datasets
+we collected with acceptable accuracy.  Finally, we show that the
+model's parameters can be estimated using simple, application-level
+measurements.
+
+<h3>Papers</h3>
+
+This paper appeared in <a href="http://www.mascots-conference.org/">IEEE MASCOTS 2005</a>.  It
+is available here in
+<a href="https://allendowney.com/research/tcp/downey05empirical.ps">Postscript</a>,
+<a href="https://allendowney.com/research/tcp/downey05empirical.ps.gz">gzipped Postscript</a> and
+<a href="https://allendowney.com/research/tcp/downey05empirical.pdf">PDF</a>.
+
+<p>
+The slides I used when I presented this paper are here in
+<a href="https://allendowney.com/research/tcp/downey05empirical.slides.ps">Postscript</a>,
+<a href="https://allendowney.com/research/tcp/downey05empirical.slides.ps.gz">gzipped Postscript</a> and
+<a href="https://allendowney.com/research/tcp/downey05empirical.slides.pdf">PDF</a>.
+
+
+</p><p>
+Here is the <a href="https://allendowney.com/research/tcp/downey03empirical.bib">.bib file</a>
+and the HTML version of the 
+<a href="https://allendowney.com/research/tcp/bibliography.html">bibliography</a>.
+
+
+</p><h3>Slides</h3>
+
+<p>
+Here are the slides I used the last time I presented this work,
+available in
+<a href="https://allendowney.com/research/tcp/downey03slides.ps">Postscript</a>,
+<a href="https://allendowney.com/research/tcp/downey03slides.ps.gz">gzipped Postscript</a> and
+<a href="https://allendowney.com/research/tcp/downey03slides.pdf">PDF</a>.
+
+
+</p><h3>Datasets</h3>
+
+The following directories contain figures from the paper
+and additional data:
+
+<ul>
+
+<li><a href="https://allendowney.com/research/tcp/timing">Timing charts</a> for a set of HTTP measurements.
+
+</li><li><a href="https://allendowney.com/research/tcp/rtts">Round trip time</a> distributions.
+
+</li><li><a href="https://allendowney.com/research/tcp/corr">Correlation</a> of rtts.
+
+</li><li><a href="https://allendowney.com/research/tcp/wins">Window sizes</a> during slow start.
+
+</li><li><a href="https://allendowney.com/research/tcp/aptimes.100000">Predicted and actual transfer times</a>,
+based on 100,000 bytes transfers.
+
+</li><li><a href="https://allendowney.com/research/tcp/aptimes.50000">Predicted and actual transfer times</a>,
+based on 50,000 bytes transfers.
+
+</li></ul>
+
+<p>
+Explanations of these datasets are available in the paper itself.
+
+
+</p><hr>
+
+</td></tr></tbody></table>
+</body></html>

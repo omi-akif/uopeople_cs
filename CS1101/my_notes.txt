@@ -118,3 +118,78 @@ SyntaxError: invalid token
 0o --> 
 
 42 * 60 + 42
+
+
+Week 2:
+
+Syntax Error
+Runtime error
+Semantic Error
+
+signal to noise ratio
+
+ratio = signal_power / noise_power
+decibels = 10 * math.log10(ratio)
+
+radians = degrees / 180 * math.pi
+
+
+Expression is a combination of values, variables, and operators. 
+
+Python interactive mode
+Python Script mode
+
+PEDMAS
+
+evaluate an expression
+
+avoid having a variable and a function with the same name.
+
+
+NameError: name 'repeat_lyrics' is not defined
+
+Follow the flow of execution
+
+
+Inside a function, the functions arguments are assigned to variables called parameters. Here is a definition for 
+
+
+def function_that_prints():
+    print "I printed"
+
+def function_that_returns():
+    return "I returned"
+
+f1 = function_that_prints()
+f2 = function_that_returns()
+print "Now let us see what the values of f1 and f2 are"
+print f1
+print f2
+
+
+print print_twice('akif')
+akif
+akif
+None # I do not know the answer to why it prints None
+
+
+A parameter is the variable listed inside the parentheses in the function definition
+
+An argument is the value that are sent to the function when it is called.
+
+line1 ---> 'Ning tiddle'
+line2 ---> 'tiddle bang'
+
+draw a stack diagram
+
+Traceback is a stack diagram.
+The order of the frames in the stack diagrams is the same as the order of the frames.
+
+Fruitful functions and void functions
+
+Store fruitful functions.
+
+Void functions returns nothing.
+When you have eliminated the impossible, whatever remains, however improbale, must be the truth." (A. Conan Doyle, The Sign of Four)
+
+*Need to work on Excercise 3.1, 3.2, and * 3.3
