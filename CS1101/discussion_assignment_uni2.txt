@@ -1,0 +1,19 @@
+
+1> def test_func(para):
+	
+	print(para)
+
+
+arg = 'text'
+
+test_func(arg)
+
+2> 
+
+test_func('value')
+var = 234.32
+test_func(var)
+test_func(60 / 180 * 3 + 6 + 2)
+
+3>
+
